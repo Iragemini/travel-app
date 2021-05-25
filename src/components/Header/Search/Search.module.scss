@@ -1,0 +1,48 @@
+.block-search {
+  position: relative;
+  display: flex;
+  .field {
+    display: inline-block;
+    width: auto;
+    vertical-align: middle;
+    padding-right: 16px;
+    box-sizing: border-box;
+  }
+  .close {
+    position: absolute;
+    display: block;
+    top: 7px;
+    right: 95px;
+    width: 18px;
+    font-size: 18px;
+    height: 18px;
+    cursor: pointer;
+    transition: 0.2s;
+    &:hover {
+      color: rgb(0, 0, 0);
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .block-search {
+    justify-content: space-between;
+    margin-top: 10px;
+    .close {
+      left: 214px;
+      right: auto;
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  .block-search {
+    .field {
+      width: calc(100% - 100px);
+    }
+    .close {
+      left: auto;
+      right: 105px;
+    }
+  }
+}

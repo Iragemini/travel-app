@@ -1,0 +1,29 @@
+.header {
+  min-height: 56px;
+  .nav {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    .panel {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .header {
+    .nav {
+      justify-content: flex-end;
+      .logo {
+        position: absolute;
+        top: 8px;
+        left: 16px;
+      }
+      .panel {
+        width: 100%;
+        flex-direction: column-reverse;
+      }
+    }
+  }
+}

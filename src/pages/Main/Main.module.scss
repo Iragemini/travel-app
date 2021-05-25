@@ -1,0 +1,19 @@
+.container-main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #f8f9fa;
+  padding: 20px 0 30px 0;
+  .list-countries {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    .card {
+      .card-content {
+        padding: 20px;
+        border: 1px solid #000;
+      }
+    }
+  }
+}
